@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Categories from "./Categories";
+import Footer from "./Footer";
 import Header from "./Header";
 import Quiz from "./Quiz";
 import Result from "./Result";
@@ -18,6 +19,7 @@ export default () => (
           <Route path="/quiz/result" component={Result} />
         </Switch>
       </div>
+      <Footer />
     </BrowserRouter>
   </>
 );

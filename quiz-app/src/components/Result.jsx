@@ -6,6 +6,9 @@ export default class Result extends React.Component {
   constructor(props) {
     super(props);
   }
+  componentDidMount() {
+    localStorage.clear();
+  }
   calculateScore = (answers, questions) => {
     let score = 0;
     questions.forEach((question, index) => {

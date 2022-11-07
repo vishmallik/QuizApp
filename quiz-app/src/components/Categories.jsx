@@ -16,6 +16,8 @@ export default class Categories extends React.Component {
       .then((data) => {
         this.setState({ categories: data.trivia_categories });
       });
+
+    localStorage.clear();
   }
 
   selectDifficulty = (level) => {
@@ -25,7 +27,7 @@ export default class Categories extends React.Component {
   };
   render() {
     return (
-      <>
+      <div className="min-h-73">
         <h2 className="text-5xl text-center py-12 text-red-400 font-semibold">
           Difficulty
         </h2>
@@ -90,7 +92,7 @@ export default class Categories extends React.Component {
             })}
           </ul>
         )}
-      </>
+      </div>
     );
   }
 }

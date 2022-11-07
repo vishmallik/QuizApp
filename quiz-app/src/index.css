@@ -58,4 +58,7 @@
   .border-1 {
     border: 1px;
   }
+  .min-h-73 {
+    min-height: 73vh;
+  }
 }
