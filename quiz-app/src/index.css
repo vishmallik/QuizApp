@@ -47,4 +47,15 @@
     background-color: rgb(5, 181, 5);
     border-radius: 7px;
   }
+  .selected {
+    background-color: #005e00;
+    color: white;
+    border: 1px solid #005e00;
+  }
+  .selected::hover {
+    color: white !important;
+  }
+  .border-1 {
+    border: 1px;
+  }
 }

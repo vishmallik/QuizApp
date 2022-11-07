@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Categories from "./Categories";
 import Header from "./Header";
 import Quiz from "./Quiz";
+import Result from "./Result";
 
 export default () => (
   <>
@@ -13,7 +14,8 @@ export default () => (
           <Route path="/" exact>
             <Categories />
           </Route>
-          <Route path="/quiz" component={Quiz} />
+          <Route path="/quiz" exact component={Quiz} />
+          <Route path="/quiz/result" component={Result} />
         </Switch>
       </div>
     </BrowserRouter>

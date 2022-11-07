@@ -63,10 +63,12 @@ export default class Categories extends React.Component {
           <span className="loader"></span>
         ) : (
           <ul className="grid grid-cols-3 gap-8 gap-y-16 py-10">
-            {console.log(this.state.categories)}
             {this.state.categories.map((category) => {
               return (
-                <li className=" mx-4 my-2  rounded-md flex h-40 border-solid border-gray-400 bg-gray-100  ">
+                <li
+                  className=" mx-4 my-2  rounded-md flex h-40 border-solid border-gray-400 bg-gray-100"
+                  key={category.id}
+                >
                   <img
                     className=" basis-4/12 shrink grow-0 w-40 h-40 object-cover"
                     src={data[category.name]}
