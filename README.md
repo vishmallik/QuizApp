@@ -1,56 +1,64 @@
-# Nano React App Default Javascript Template
+# 💡 Quiz App
 
-The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
+A Quiz App which is made using React and opentdb API to fetch quiz data.
 
-- `npm start` — This will spawn a development server with a default port of `5173`.
-- `npm run build` — This will output a production build in the `dist` directory.
-- `npm run preview` — This will run the production build locally with a default port of `5173` (this will not work if you haven't generated the production build yet).
+## Badges
 
-## Custom port
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-You can use the `-p` flag to specify a port for development. To do this, you can either run `npm start` with an additional flag:
+[![React.js](https://img.shields.io/badge/Frontend-React.js-blue)](https://reactjs.org/)
 
-```
-npm start -- --port 3000
-```
+## Features
 
-Or edit the `start` script directly:
+- User can select difficulty : Easy, Medium & Hard
+- 24 unique and difficulty categories available to pick.
+- Local Storage Support, so user can continue where they last left at.
+- Results page to check how many questions were correct.
+- User can retake the same quiz after they have completed the quiz atleast once.
 
-```
-vite --port 3000
-```
+## Screenshots
 
-## Adding styles
+**Home page**
+![Screenshot (27)](https://user-images.githubusercontent.com/64186460/203847245-bb5f5bc1-7e3b-4200-9f7e-36967b7d92f5.png)
 
-You can use CSS files with simple ES2015 `import` statements anywhere in your Javascript:
+**Quiz Page**
+![Screenshot (28)](https://user-images.githubusercontent.com/64186460/203847252-dd4a23f5-3816-461d-9903-08b3302539fb.png)
 
-```js
-import "./index.css";
-```
+**Results Page**
+![Screenshot (30)](https://user-images.githubusercontent.com/64186460/203847257-40a7ff16-348a-4697-a395-fc7cc14055fb.png)
 
-## Babel transforms
+## Run Locally
 
-The Babel preset [babel-preset-nano-react-app](https://github.com/nano-react-app/babel-preset-nano-react-app) is used to support the same transforms that Create React App supports.
+Clone the project
 
-The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
-
-
-## Deploy to GitHub Pages
-
-You can also deploy your project using GitHub pages.
-First install the `gh-pages` [package](https://github.com/tschaub/gh-pages):
-
-`npm i -D gh-pages`
-
-Use the following scripts for deployment:
-
-```js
-"scripts": {
-  "start": "vite",
-  "build": "vite build",
-  "predeploy": "rm -rf dist && vite build",
-  "deploy": "gh-pages -d dist"
-},
+```bash
+  git clone https://github.com/vishmallik/QuizApp.git
 ```
 
-Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+## Demo
+
+https://quizappbyvish.netlify.app/
+
+## Authors
+
+- [@vishmallik](https://www.github.com/vishmallik)
+
+## Feedback
+
+If you have any feedback, please reach out to me at vishmallik@gmail.com
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
